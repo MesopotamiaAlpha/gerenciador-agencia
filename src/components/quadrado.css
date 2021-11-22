@@ -1,0 +1,15 @@
+.quadro1{
+    margin-top: 15%;
+    margin-left: 15%;
+    margin-right: 15%;
+    height: 500px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.lebelInput{
+    margin-top: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+}

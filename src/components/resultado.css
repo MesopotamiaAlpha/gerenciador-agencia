@@ -1,0 +1,10 @@
+.resultado{
+    margin-top: 15%;
+    margin-left: 15%;
+    margin-right: 15%;
+    height: 500px;
+    border: 1px solid black;
+}
+.titulo{
+    text-align: center;
+}

@@ -1,12 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Quadrado1 from './components/quadrado';
+import Quadrado2 from './components/resultado';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Quadrado1> 
+
+    </Quadrado1>
+
+    <Quadrado2> 
+        
+    </Quadrado2>
+
   </React.StrictMode>,
   document.getElementById('root')
 );
