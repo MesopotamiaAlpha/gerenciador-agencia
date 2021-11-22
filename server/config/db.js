@@ -7,4 +7,4 @@ password: "Mesopotamia@45",
 database:"cadastroPassageiros" 
 })
 
-module.exports = db;a
+module.exports = db;aaaa
