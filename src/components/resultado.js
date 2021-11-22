@@ -5,7 +5,7 @@ import Axios from "axios";
 
 function Quadrado2(teste) {
     const [postList, setPostList] = useState([]);
-
+    let  id = teste.id;
     useEffect((data,teste) => {
         Axios.get("http://192.168.1.28:3002/api/get").then((data) => {
             setPostList(data.data);
@@ -20,7 +20,7 @@ function Quadrado2(teste) {
         
         <div className="resultado">
                 <h1 className="titulo">Dentro do banco de dados</h1>
-                
+                <h1>{postList.map(nome => <div key={nome.nome_passageiro}>{nome.nome_passageiro}</div>)}</h1>
             </div>
     );
 }
