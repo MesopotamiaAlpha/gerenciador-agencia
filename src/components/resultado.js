@@ -5,22 +5,22 @@ import Axios from "axios";
 
 function Quadrado2(teste) {
     const [postList, setPostList] = useState([]);
-    let  id = teste.id;
-    useEffect((data,teste) => {
+
+    useEffect((data) => {
         Axios.get("http://192.168.1.28:3002/api/get").then((data) => {
             setPostList(data.data);
             console.log(data.data);
-            teste = data.data;
-            console.log("Dentro da variavel tem",teste);
+
             
         });
     }, [])
 
     return (
-        
         <div className="resultado">
                 <h1 className="titulo">Dentro do banco de dados</h1>
-                <h1>{postList.map(nome => <div key={nome.nome_passageiro}>{nome.nome_passageiro}</div>)}</h1>
+                <ul>
+                    <li>{postList.map(nome => <div key={nome.id_nome}>{nome.nome_passageiro}</div>)}</li>
+                </ul>
             </div>
     );
 }
