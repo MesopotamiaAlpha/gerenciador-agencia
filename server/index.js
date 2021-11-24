@@ -34,31 +34,19 @@ app.get("/api/getFromId/:id", (req, res) => {
 app.post('/api/create', (req, res) => {
 
     const username = req.body.userName;
-    const title = req.body.title;
-    const text = req.body.text;
+
+    console.log(username)
 
     db.query("INSERT INTO nome (nome_passageiro) VALUES (?)", [username], (err, result) => {
         if (err) {
             console.log(err)
         }
         console.log(result)
-    });
+    }
+    );
 })
 
-// Route to like a post
-app.post('/api/like/:id', (req, res) => {
-
-    const id = req.params.id;
-    db.query("UPDATE posts SET likes = likes + 1 WHERE id = ?", id, (err, result) => {
-        if (err) {
-            console.log(err)
-        }
-        console.log(result)
-    });
-});
-
 // Route to delete a post
-
 app.delete('/api/delete/:id', (req, res) => {
     const id = req.params.id;
 

@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
 import Quadrado1 from './components/quadrado';
 import Quadrado2 from './components/resultado';
+import Quadrado3 from './components/delet';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -13,6 +14,10 @@ ReactDOM.render(
     <Quadrado2> 
         
     </Quadrado2>
+
+    <Quadrado3> 
+        
+    </Quadrado3>
 
   </React.StrictMode>,
   document.getElementById('root')
