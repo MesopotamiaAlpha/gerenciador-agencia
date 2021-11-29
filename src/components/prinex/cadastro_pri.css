@@ -1,15 +1,14 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
+
 .quadro1{
+    font-family: 'roboto', sans-serif;
     display: flex;
-    flex-direction: row;
-    margin-top: 5%;
-    margin-left: 5%;
-    margin-right: 1%;
     text-align: center;
+    height: 150px;
     border: 1px solid black;
 }
 
 .inpNome{
-    margin-left: 10%;
-    margin-right: 10%;
-    text-align: center;
+    margin-right: 12px;
+    width: 250px;
 }

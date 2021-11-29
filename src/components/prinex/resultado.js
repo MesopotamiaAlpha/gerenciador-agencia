@@ -34,7 +34,7 @@ const deletePost = (id) => {
         <div className="resultado">
                 <h1 className="titulo">Prinex recebidos</h1>
                 <ul>
-                    {postList.map(nome => <div key={nome.id_pri}>{nome.nome_prinex}
+                    {postList.map(nome => <div className="texto" key={nome.id_pri}>{nome.nome_prinex}
                         <button onClick={(() => deletePost(nome.id_pri))}>X</button>
                     </div>)}
                     
