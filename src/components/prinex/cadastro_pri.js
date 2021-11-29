@@ -1,7 +1,7 @@
 import React, {useState}  from "react";
 import "./cadastro_pri";
 import "./cadastro_pri.css";
-import Axios from 'axios'
+import Axios from 'axios';
 
 
 function Cadastro_Pri() {
@@ -15,7 +15,7 @@ const submitPost = () => {
     return (
         <div className="quadro1">
             <form>
-            <h1>Adicionar no banco de dados</h1>
+            <h1 className="titulo">Adicionar no banco de dados</h1>
 
             <input type="text" onChange={(e)=> {setUserName(e.target.value)}}/>
 

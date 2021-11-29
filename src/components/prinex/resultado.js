@@ -3,6 +3,8 @@ import "./resultado";
 import "./resultado.css";
 import Axios from "axios";
 
+
+
 function Resultado_Pri() {
     const [postList, setPostList] = useState([]);
 
@@ -27,13 +29,11 @@ const deletePost = (id) => {
     })
 }
 //em cima é a função para deletar o post
-
-
     
     return (
         <div className="resultado">
                 <h1 className="titulo">Prinex recebidos</h1>
-                <ul>
+                <ul className="textoLista">
                     {postList.map(nome_prinex => <div key={nome_prinex.id_pri}>{nome_prinex.nome_prinex}
                         <button onClick={(() => deletePost(nome_prinex.id_pri))}>X</button>
                     </div>)}
