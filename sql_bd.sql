@@ -2,6 +2,22 @@ drop database cadastroPassageiros;
 create database cadastroPassageiros;
 use cadastroPassageiros;
 
+##area dos cadastros de prinex
+
+create table if not exists prinex(
+id_pri int not null auto_increment,
+nome_prinex varchar (90) not null,
+PRIMARY KEY (id_pri)
+);
+
+
+
+create table if not exists nome (
+	id_nome INT NOT NULL AUTO_INCREMENT,
+	nome_passageiro VARCHAR(50) NOT NULL
+);
+
+
 CREATE TABLE IF NOT EXISTS `cadastroPassageiros`.`classe` (
   `id_classe` INT NOT NULL AUTO_INCREMENT,
   `classe_bus` VARCHAR(15) NOT NULL,
@@ -50,12 +66,12 @@ COLLATE = utf8mb4_0900_ai_ci;
 CREATE TABLE IF NOT EXISTS `cadastroPassageiros`.`nome` (
   `id_nome` INT NOT NULL AUTO_INCREMENT,
   `nome_passageiro` VARCHAR(50) NOT NULL,
-  `id_obs` INT NOT NULL,
-  `observacao_id_obs` INT NOT NULL,
-  `qtd_poltrona_id_qtd` INT NOT NULL,
-  `classe_id_classe` INT NOT NULL,
-  `viagem_data_id_data` INT NOT NULL,
-  `telefone_id_telefone` INT NOT NULL,
+  `id_obs` INT NOT NULL ,
+  `observacao_id_obs` INT NOT NULL ,
+  `qtd_poltrona_id_qtd` INT NOT NULL ,
+  `classe_id_classe` INT NOT NULL ,
+  `viagem_data_id_data` INT NOT NULL ,
+  `telefone_id_telefone` INT NOT NULL ,
   PRIMARY KEY (`id_nome`),
   INDEX `fk_nome_observacao_idx` (`observacao_id_obs` ASC) VISIBLE,
   INDEX `fk_nome_qtd_poltrona1_idx` (`qtd_poltrona_id_qtd` ASC) VISIBLE,
@@ -91,10 +107,21 @@ COLLATE = utf8mb4_0900_ai_ci
 
 ##para relacionar as tabelas
 
-select nome.nome_passageiro, observacao.obs_texto from nome inner join observacao on nome.id_obs = observacao.id_obs;
+#select nome.nome_passageiro, observacao.obs_texto from nome inner join observacao on nome.id_obs = observacao.id_obs;
 
 #visualizar dentro das tabelas
-SELECT * FROM cadastroPassageiros.viagem_data;
+#SELECT * FROM cadastroPassageiros.viagem_data;
+
+#INSERT INTO observacao,qtd_poltrona (obs_texto,qtd_poltrona) VALUES ("Teste de texto",5);
+#INSERT INTO `cadastroPassageiros`.`observacao` (`obs_texto`) VALUES ('erwrewr');
+
+
+#BEGIN;
+#INSERT INTO observacao ( obs_texto)
+#  VALUES('test');
+#INSERT INTO qtd_poltrona (qtd_polt) 
+#  VALUES(5);
+#COMMIT;
 
 
 

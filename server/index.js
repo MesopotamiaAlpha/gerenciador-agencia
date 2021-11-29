@@ -50,7 +50,7 @@ app.post('/api/create', (req, res) => {
 app.delete('/api/delete/:id', (req, res) => {
     const id = req.params.id;
 
-    db.query("DELETE FROM nome WHERE id_nome= ?", id, (err, result) => {
+    db.query("DELETE FROM prinex WHERE id_pri= ?", id, (err, result) => {
         if (err) {
             console.log(err)
         }

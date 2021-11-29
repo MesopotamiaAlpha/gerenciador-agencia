@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
 import Cadastro_Pri from './components/prinex/cadastro_pri';
 import Resultado_Pri from './components/prinex/resultado';
-import Delete_Pri from './components/prinex/delet_pri';
+
 
 ReactDOM.render(
   <React.StrictMode>
