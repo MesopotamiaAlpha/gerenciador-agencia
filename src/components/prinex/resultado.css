@@ -1,15 +1,10 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
-
 .resultado{
-    font-family: 'roboto', sans-serif;
-    display: flex;
-    flex-direction: column;
+    margin-top: 15%;
+    margin-left: 15%;
+    margin-right: 15%;
+    height: 500px;
     border: 1px solid black;
 }
 .titulo{
-    text-align: center;
-}
-
-.texto{
     text-align: center;
 }

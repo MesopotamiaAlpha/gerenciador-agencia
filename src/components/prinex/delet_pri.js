@@ -3,7 +3,6 @@ import "./delet_pri";
 import "./delet_pri.css";
 import Axios from "axios";
 
-
 function Delete_Pri() {
 
     const [post,setPost] = useState({});
