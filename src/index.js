@@ -1,23 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
-import Quadrado1 from './components/quadrado';
-import Quadrado2 from './components/resultado';
-import Quadrado3 from './components/delet';
+import Cadastro_Pri from './components/prinex/cadastro_pri';
+import Resultado_Pri from './components/prinex/resultado';
+import Delete_Pri from './components/prinex/delet_pri';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Quadrado1> 
+    <Cadastro_Pri> 
 
-    </Quadrado1>
+    </Cadastro_Pri>
 
-    <Quadrado2> 
+    <Resultado_Pri> 
         
-    </Quadrado2>
-
-    <Quadrado3> 
-        
-    </Quadrado3>
+    </Resultado_Pri>
 
   </React.StrictMode>,
   document.getElementById('root')

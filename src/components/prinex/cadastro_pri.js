@@ -1,16 +1,16 @@
 import React, {useState}  from "react";
-import "./quadrado";
-import "./quadrado.css";
+import "./cadastro_pri";
+import "./cadastro_pri.css";
 import Axios from 'axios'
 
 
-function Quadrado1() {
+function Cadastro_Pri() {
 
 const [userName,setUserName] = useState("");
 const [text,setText] = useState("");
 
 const submitPost = () => {
-    Axios.post('http://192.168.1.28:3002/api/create', {userName: userName, text:text})
+    Axios.post('http://192.168.1.27:3002/api/create', {userName: userName})
     }
     return (
         <div className="quadro1">
@@ -22,19 +22,10 @@ const submitPost = () => {
             <button onClick={submitPost}>Enviar campo nome</button>
             
             </form>
-
-            <form>
-
-            <label>Insira uma observação</label>
-                <textarea onChange={(e)=>{ setText(e.target.value)}}></textarea>
-                <button onClick={submitPost}>Enviar campo observação</button>
-                
-            </form>
-            <h2>Resultado da query</h2>
         </div>
     );
 
     
     }
 
-export default Quadrado1;
+export default Cadastro_Pri;

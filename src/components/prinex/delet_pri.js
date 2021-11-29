@@ -1,14 +1,14 @@
 import React, {useState} from "react";
-import "./delet";
-import "./delet.css";
+import "./delet_pri";
+import "./delet_pri.css";
 import Axios from "axios";
 
-function Quadrado3() {
+function Delete_Pri() {
 
     const [post,setPost] = useState({});
 
     const deletePost = (id) => {
-        Axios.delete(`http://192.168.1.28:3002/api/delete/${post}`).then((response)=>{
+        Axios.delete(`http://192.168.1.27:3002/api/delete/${post}`).then((response)=>{
             alert("you deleted a post")
         })
     }
@@ -20,6 +20,8 @@ function Quadrado3() {
                 <button onClick={(() => deletePost(post.id))}>X</button>
                 
             </div>
+
+            
     );
 }  
-export default Quadrado3;
+export default Delete_Pri;

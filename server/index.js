@@ -9,7 +9,7 @@ app.use(express.json())
 
 // Route to get all posts
 app.get("/api/get", (req, res) => {
-    db.query("SELECT * FROM nome", (err, result) => {
+    db.query("SELECT * FROM prinex", (err, result) => {
         if (err) {
             console.log(err)
         }
@@ -21,7 +21,7 @@ app.get("/api/get", (req, res) => {
 app.get("/api/getFromId/:id", (req, res) => {
 
     const id = req.params.id;
-    db.query("SELECT * FROM nome WHERE id = ?", id,
+    db.query("SELECT * FROM prinex WHERE id = ?", id,
         (err, result) => {
             if (err) {
                 console.log(err)
@@ -37,7 +37,7 @@ app.post('/api/create', (req, res) => {
 
     console.log(username)
 
-    db.query("INSERT INTO nome (nome_passageiro) VALUES (?)", [username], (err, result) => {
+    db.query("INSERT INTO prinex (nome_prinex) VALUES (?)", [username], (err, result) => {
         if (err) {
             console.log(err)
         }
