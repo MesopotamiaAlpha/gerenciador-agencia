@@ -2,8 +2,6 @@ import React, {useState}  from "react";
 import "./cadastro_pri";
 import "./cadastro_pri.css";
 import Axios from 'axios'
-import Button from '@material-ui/core/Button';
-
 
 
 function Cadastro_Pri() {
@@ -19,9 +17,9 @@ const submitPost = () => {
             <form>
             <h1>Adicionar no banco de dados</h1>
 
-            <input className="inpNome" type="text" onChange={(e)=> {setUserName(e.target.value)}}/>
+            <input type="text" onChange={(e)=> {setUserName(e.target.value)}}/>
 
-            <Button  variant="contained" color="primary" onClick={submitPost}>Cadastrar nome</Button>
+            <button onClick={submitPost}>Enviar campo nome</button>
             
             </form>
         </div>
