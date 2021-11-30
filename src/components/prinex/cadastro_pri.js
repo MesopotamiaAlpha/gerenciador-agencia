@@ -2,9 +2,10 @@ import React, {useState}  from "react";
 import "./cadastro_pri";
 import "./cadastro_pri.css";
 import Axios from 'axios';
-
+import { TextField , Button } from '@material-ui/core';
 
 function Cadastro_Pri() {
+    const [value, setValue] = React.useState('Controlled');
 
 const [userName,setUserName] = useState("");
 const [text,setText] = useState("");
@@ -17,9 +18,9 @@ const submitPost = () => {
             <form>
             <h1 className="titulo">Adicionar no banco de dados</h1>
 
-            <input type="text" onChange={(e)=> {setUserName(e.target.value)}}/>
+            <TextField  id="outlined-textarea" label="Cadastre aqui" placeholder="Nome e tipo de volume" multiline  type="text" onChange={(e)=> {setUserName(e.target.value)}}/>
 
-            <button onClick={submitPost}>Enviar campo nome</button>
+            <Button variant="contained" color="success" onClick={submitPost}>Cadastrar Prinex</Button>
             
             </form>
         </div>

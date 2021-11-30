@@ -2,8 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./resultado";
 import "./resultado.css";
 import Axios from "axios";
-
-
+import { Button } from '@material-ui/core';
 
 function Resultado_Pri() {
     const [postList, setPostList] = useState([]);
@@ -35,7 +34,7 @@ const deletePost = (id) => {
                 <h1 className="titulo">Prinex recebidos</h1>
                 <ul className="textoLista">
                     {postList.map(nome_prinex => <div key={nome_prinex.id_pri}>{nome_prinex.nome_prinex}
-                        <button onClick={(() => deletePost(nome_prinex.id_pri))}>X</button>
+                        <Button size="small" color="error" variant="outlined" onClick={(() => deletePost(nome_prinex.id_pri))}>X</Button>
                     </div>)}
                     
                 </ul>
