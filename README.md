@@ -5,8 +5,12 @@
 Este projeto e estudos está sendo baseado neste material que encontrei na internet, onde consegui de certa facilidade desenvolver o inicio do projeto:
 https://dev.to/nasreenkhalid/simple-react-js-and-mysql-integration-crud-app-frontend-3i0l
 
+O servidor precisa ter um banco de dados Mysql rodando para ter a conexão com o banco de dados! Para auxiliar segue um material para instalação do servidor: https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-20-04-pt
+
+
 Primeiro para rodar o servidor precisa ser feito um arquivo de configuração dentro da pasta config/db.js, este arquivo deve conter estas linhas e configuração:
 -------------
+<code>
 const mysql = require('mysql');
 
 const db = mysql.createConnection({
@@ -17,6 +21,7 @@ database:"bancoDeDadosAUsar"
 })
 
 module.exports = db;
+</code>
 --------------
 
 Depois no servidor é necessário instalar os seguintes pacotes para funcionar:
