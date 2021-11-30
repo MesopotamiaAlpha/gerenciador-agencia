@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import "./resultado";
 import "./resultado.css";
 import Axios from "axios";
+import ListItemButton from '@material-ui/core/ListItemButton';
+
 
 // esta função traz todos os registros dentro do banco de dados e usa a função map para criar um array de objetos
 function Resultado_Pri() {
@@ -30,11 +32,13 @@ const deletePost = (id) => {
         <div className="resultado">
                 <h1 className="titulo">Prinex recebidos</h1>
                 <ul>
-                    {postList.map(nome_prinex => <div className="textoLista" key={nome_prinex.id_pri}>{nome_prinex.nome_prinex}
+                    {postList.map(nome_prinex => <ListItemButton component="a" className="textoLista" key={nome_prinex.id_pri}>{nome_prinex.nome_prinex}
                         <button className="btnDel" onClick={(() => deletePost(nome_prinex.id_pri))}>X</button>
-                    </div>)}
+                        
+                    </ListItemButton>)}
                     
                 </ul>
+                
             </div>
     );
 }
