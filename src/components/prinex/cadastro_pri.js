@@ -14,11 +14,11 @@ const submitPost = () => {
     return (
         <div className="quadro1">
             <form>
-            <h1 className="titulo">Adicionar no banco de dados</h1>
+            <h1 className="titulo">Cadastrar o prinex</h1>
 
-            <input type="text" onChange={(e)=> {setUserName(e.target.value)}}/>
+            <input className="inpNome" type="text" onChange={(e)=> {setUserName(e.target.value)}}/>
 
-            <button onClick={submitPost}>Enviar campo nome</button>
+            <button className="btnCadastro" onClick={submitPost}>Enviar campo nome</button>
             
             </form>
         </div>
