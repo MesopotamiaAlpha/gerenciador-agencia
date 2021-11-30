@@ -3,13 +3,15 @@
 body{
     background-color: #002021;
     font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 .resultado{
-    margin-top: 15%;
+    margin-top: 1%;
     margin-left: 15%;
     margin-right: 15%;
-    height: 500px;
+    height: auto;
     border: 1px solid #ed7723;
     text-align: center;
 }
@@ -23,4 +25,13 @@ body{
     color: #ed7723;
     font-size: 25px;
     font-weight: bolder;
+    margin-top: 5px;
+}
+
+.btnDel{
+    margin-left: 25px;
+}
+
+.resultado{
+
 }
