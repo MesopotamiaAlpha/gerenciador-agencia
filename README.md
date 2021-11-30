@@ -1,6 +1,6 @@
 # Projeto Gerenciador agencia
 
-![Projeto em react](https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Projeto em react](https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) ![Projeto em nodejs](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white) ![Projeto em mysql](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)
 
 ## Este é o meu primeiro projeto em ReactJs + Axios + NodeJs + Mysql, esta sendo desenvolvido para resolver um problema de uma agencia de viajes onde todo um processo de registro de informações acontece tudo em papel. Vendo esta dificuldade pensei em desenvolver este projeto com banco de dados para treinar o meu aprendizado em React.
 
