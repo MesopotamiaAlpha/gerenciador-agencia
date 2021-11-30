@@ -7,7 +7,6 @@ import Axios from 'axios';
 function Cadastro_Pri() {
 
 const [userName,setUserName] = useState("");
-const [text,setText] = useState("");
 
 const submitPost = () => {
     Axios.post('http://192.168.1.27:3002/api/create', {userName: userName})
