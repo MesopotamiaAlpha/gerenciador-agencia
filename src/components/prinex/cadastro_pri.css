@@ -3,7 +3,8 @@
     align-items: center;
     justify-content: center;
     height:300px;
-    border: 1px solid #ed7723;
+    border: 2px solid #ed7723;
+    background-color: aliceblue;
 }
 
 .inpNome{

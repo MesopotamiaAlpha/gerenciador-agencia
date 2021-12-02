@@ -12,8 +12,9 @@ body{
     margin-left: 15%;
     margin-right: 15%;
     height: auto;
-    border: 1px solid #ed7723;
+    border: 5px solid #ed7723;
     text-align: center;
+    background-color: aliceblue;
 }
 
 .titulo{
