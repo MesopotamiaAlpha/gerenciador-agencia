@@ -18,7 +18,7 @@ const submitPost = () => {
 
             <input className="inpNome" type="text" onChange={(e)=> {setUserName(e.target.value)}}/>
 
-            <button className="btnCadastro" onClick={submitPost}>Enviar campo nome</button>
+            <button className="btnCadastro" onClick={submitPost}>Cadastrar</button>
             
             </form>
         </div>
