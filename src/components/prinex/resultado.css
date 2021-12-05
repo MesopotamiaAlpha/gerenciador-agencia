@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
 body{
-    background-color: #002021;
+    background-color: #eaeef3;
     font-family: 'Lato', sans-serif;
     margin: 0;
     padding: 0;
@@ -14,7 +14,7 @@ body{
     height: auto;
     border: 5px solid #ed7723;
     text-align: center;
-    background-color: aliceblue;
+    background-color: #002021;
 }
 
 .titulo{
