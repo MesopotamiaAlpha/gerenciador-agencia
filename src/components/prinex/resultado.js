@@ -16,7 +16,7 @@ function Resultado_Pri() {
             setPostList(data.data);
             console.log(data.data);
         });
-    }, [])
+    }, [postList])
 
 function deletPost (id){
     console.log("teste");
