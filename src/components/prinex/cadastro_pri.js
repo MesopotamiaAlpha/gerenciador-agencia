@@ -8,7 +8,11 @@ import SendIcon from '@material-ui/icons/Send';
 
 function Cadastro_Pri() {
 
+
     const [userName, setUserName] = useState("");
+
+const [userName,setUserName] = useState("");
+
 
     //Teste de label para colocar dentro das opções
 
@@ -21,6 +25,7 @@ function Cadastro_Pri() {
     return (
 
         <div className="quadro1">
+
             <Paper  elevation={12}  style={{    padding: 1,    backgroundColor: "#002021",    border: "5px solid #ed7723"  }}  >
                 <h1 className="titulo">Cadastrar o prinex</h1>
 
@@ -34,6 +39,16 @@ function Cadastro_Pri() {
                 <Button className="btnCadastro" variante="contained" endIcon={<SendIcon />} onClick={submitPost}>Cadastrar</Button>
 
             </Paper>
+
+            <form>
+            <h1 className="titulo">Cadastrar o prinex</h1>
+
+            <input className="inpNome" type="text" onChange={(e)=> {setUserName(e.target.value)}}/>
+
+            <button className="btnCadastro" onClick={submitPost}>Cadastrar</button>
+            
+            </form>
+
         </div>
     );
 
