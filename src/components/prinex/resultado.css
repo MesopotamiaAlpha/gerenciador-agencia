@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
 body{
-    background-color: #002021;
+    background-color: #eaeef3;
     font-family: 'Lato', sans-serif;
     margin: 0;
     padding: 0;
@@ -12,8 +12,13 @@ body{
     margin-left: 15%;
     margin-right: 15%;
     height: auto;
+
+    border: 5px solid #ed7723;
+
     border: 1px solid #ed7723;
+
     text-align: center;
+    background-color: #002021;
 }
 
 .titulo{
@@ -32,6 +37,11 @@ body{
     margin-left: 25px;
 }
 
+
+.listaUl{
+    padding-left: 0%;
+
 .resultado{
+
 
 }
