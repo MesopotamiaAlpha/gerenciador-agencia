@@ -11,9 +11,6 @@ function Cadastro_Pri() {
 
     const [userName, setUserName] = useState("");
 
-const [userName,setUserName] = useState("");
-
-
     //Teste de label para colocar dentro das opções
 
     const submitPost = () => {

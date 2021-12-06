@@ -13,16 +13,6 @@ O servidor precisa ter um banco de dados Mysql rodando para ter a conexão com o
 
 
 Primeiro para rodar o servidor precisa ser feito um arquivo de configuração dentro da pasta config/db.js, este arquivo deve conter estas linhas e configuração:
-<<<<<<< HEAD
--------------
-
-
-
--------------
-||||||| 9c6f359... Atualização
-=======
--------------
->>>>>>> parent of 9c6f359... Atualização
 
 <code>
 const mysql = require('mysql');
@@ -35,8 +25,6 @@ database:"bancoDeDadosAUsar"
 })
 
 module.exports = db;
-
-
 </code>
 
 -------------
