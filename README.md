@@ -15,18 +15,19 @@ O servidor precisa ter um banco de dados Mysql rodando para ter a conexão com o
 Primeiro para rodar o servidor precisa ser feito um arquivo de configuração dentro da pasta config/db.js, este arquivo deve conter estas linhas e configuração:
 
 <code>
-const mysql = require('mysql');
+    <pre>
+        const mysql = require('mysql');
 
-const db = mysql.createConnection({
-host: "ipDoServidor",
-user: "usuarioDoBancoDeDados",
-password: "senhaDoBancoDeDados",
-database:"bancoDeDadosAUsar" 
-})
+            const db = mysql.createConnection({
+            host: "ipDoServidor",
+            user: "usuarioDoBancoDeDados",
+            password: "senhaDoBancoDeDados",
+            database:"bancoDeDadosAUsar" 
+        })
 
-module.exports = db;
-</code>
-
+        module.exports = db;
+    </pre>
+<code>
 -------------
 
 Depois no servidor é necessário instalar os seguintes pacotes para funcionar:
