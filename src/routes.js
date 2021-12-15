@@ -18,7 +18,7 @@ export default function MainRoutes() {
                 <Route path='/' element={<Cadastro_Pri />} />
                 <Route path='/home' element={<Cadastro_Pri />} /> 
                 <Route path='/agendamento' element={<Agendamento />} />
-                
+                <Route path='/fechamentoCaixa' element={<FechamentoCaixa />} />
                 
             </Routes>
 
