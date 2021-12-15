@@ -1,22 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
-import Cadastro_Pri from './components/prinex/cadastro_pri';
+import Routes from './routes';
 import Resultado_Pri from './components/prinex/resultado';
-import SearchAppBar from './components/topBar'
-
 
 ReactDOM.render(
   <React.StrictMode>
-    <SearchAppBar />
-    <Cadastro_Pri> 
-
-    </Cadastro_Pri>
-
-    <Resultado_Pri> 
-        
-    </Resultado_Pri>
-
+        <Routes></Routes>
+        <Resultado_Pri></Resultado_Pri>
   </React.StrictMode>,
   document.getElementById('root')
 );
