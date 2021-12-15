@@ -4,11 +4,13 @@ use cadastroPassageiros;
 
 ##area dos cadastros de prinex
 
-create table if not exists prinex(
-id_pri int not null auto_increment,
-nome_prinex varchar (90) not null,
-PRIMARY KEY (id_pri)
-);
+CREATE TABLE `cadastroPassageiros`.`prinex` (
+  `id_pri` INT NOT NULL AUTO_INCREMENT,
+  `destinatario` VARCHAR(90) NOT NULL,
+  `tipo` VARCHAR(10) NULL,
+  `cte` INT(10) NOT NULL,
+  `cad_data` DATETIME NULL,
+  PRIMARY KEY (`id_pri`));
 
 
 

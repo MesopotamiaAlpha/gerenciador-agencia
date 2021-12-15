@@ -21,7 +21,7 @@ app.get("/api/get", (req, res) => {
 app.get("/api/getFromId/:id", (req, res) => {
 
     const id = req.params.id;
-    db.query("SELECT * FROM prinex WHERE id = ?", id,
+    db.query("SELECT * FROM prinex WHERE id_pri = ?", id,
         (err, result) => {
             if (err) {
                 console.log(err)
@@ -33,11 +33,14 @@ app.get("/api/getFromId/:id", (req, res) => {
 // Route for creating the post
 app.post('/api/create', (req, res) => {
 
-    const username = req.body.userName;
+    const usedestinatario = req.body.userDestinatario;
+    const usertipo = req.body.userTipo;
+    const usercte = req.body.userCte;
+    const userdata = req.body.userData;
 
-    console.log(username)
+    console.log(usedestinatario, usertipo , usercte, userdata)
 
-    db.query("INSERT INTO prinex (nome_prinex) VALUES (?)", [username], (err, result) => {
+    db.query("INSERT INTO prinex (destinatario,tipo,cte,cad_data) VALUES (?,?,?,?)", [usedestinatario,usertipo,usercte,userdata], (err, result) => {
         if (err) {
             console.log(err)
         }
