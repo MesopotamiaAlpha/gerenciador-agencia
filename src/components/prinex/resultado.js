@@ -50,14 +50,6 @@ function deletPost (id){
     })
 }
 
-//Na parte de baixo ele usa para apagar os registros do banco de dados
-
-const listarPost = (id) => {
-
-}
-
-
-
 // dentro do return ele verifica o array e cria um botão para deletar para cada registro dentro do banco de dados, os botoes possuem um id de cada registro para apagar cada um    
     return (
 

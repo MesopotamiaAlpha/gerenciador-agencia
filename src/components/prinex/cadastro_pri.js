@@ -19,6 +19,7 @@ function Cadastro_Pri() {
             console.log(err);
         }
         );
+        window.alert("Cadastro realizado com sucesso!");
 
     };
 
@@ -40,13 +41,13 @@ function Cadastro_Pri() {
                 <input className="inpData" type="date" onChange={(e) => { setData(e.target.value) }} />
 
                 <div className="boxTipo">
-                    <Checkbox className="boxTipo" onClick={() => {
+                    <Checkbox className="boxTipo" style={{ color: "white"}} onClick={() => {
                         userTipo = "Envelope";
                         console.log(userTipo);
                     }} />
 
                     <p className="textoTipo" >Envelope</p>
-                    <Checkbox className="boxTipo" onClick={() => {
+                    <Checkbox className="boxTipo" style={{ color: "white"}} onClick={() => {
                         userTipo = "Caixa";
                         console.log(userTipo);
                     }} />
@@ -54,7 +55,7 @@ function Cadastro_Pri() {
                 </div>
 
 
-                <Button className="btnCadastro" variante="contained" endIcon={<SendIcon />} onClick={submitPost}>Cadastrar</Button>
+                <Button className="btnCadastro" variante="contained" style={{ color: "#ed7723"}} endIcon={<SendIcon />} onClick={submitPost}>Cadastrar</Button>
 
             </Paper>
         </div>

@@ -17,14 +17,15 @@
 }
 
 .btnCadastro{
-    margin-left: 0px;
+
+
 }
 
 .textoTipo{
     color:#ed7723;
     text-transform: uppercase;
     font-weight: bolder;
-    font-size: 15px;
+    font-size: 18px;
 }
 
 .boxTipo{
@@ -34,4 +35,5 @@
     align-items: center;
     width: 100%;
     height: 100%;
+    
 }
