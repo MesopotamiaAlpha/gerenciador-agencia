@@ -32,7 +32,6 @@ function Cadastro_Pri() {
         <div className="quadro1">
 
 
-
             <Paper elevation={12} style={{ padding: 1, backgroundColor: "#002021", border: "5px solid #ed7723" }}  >
                 <h1 className="titulo">Cadastrar o prinex</h1>
 
