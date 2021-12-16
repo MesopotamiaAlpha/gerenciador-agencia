@@ -15,8 +15,10 @@ function Cadastro_Pri() {
     const submitPost = () => {
         Axios.post('http://192.168.1.34:3002/api/create', { userDestinatario: userDestinatario, userTipo: userTipo, userCte: userCte, userData: userData }).then(res => {
             console.log(res);
+            
         }, err => {
             console.log(err);
+            window.alert("Erro ao consultar o banco de dados, informe ao Adm!");
         }
         );
         window.alert("Cadastro realizado com sucesso!");
