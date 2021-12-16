@@ -1,4 +1,4 @@
-# Projeto Gerenciador agencia
+<h1> Projeto Gerenciador agencia </h1>
 
 
 ![Projeto em react](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) ![Projeto em nodejs](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white) ![Projeto em mysql](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white) ![Projeto em javascript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E) ![Projeto em material UI](https://img.shields.io/badge/Material--UI-0081CB?style=for-the-badge&logo=material-ui&logoColor=white) ![Projeto em Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
@@ -15,35 +15,45 @@ O servidor precisa ter um banco de dados Mysql rodando para ter a conexão com o
 Primeiro para rodar o servidor precisa ser feito um arquivo de configuração dentro da pasta config/db.js, este arquivo deve conter estas linhas e configuração:
 
 <code>
-const mysql = require('mysql');
+    <pre>
+        const mysql = require('mysql');
 
-const db = mysql.createConnection({
-host: "ipDoServidor",
-user: "usuarioDoBancoDeDados",
-password: "senhaDoBancoDeDados",
-database:"bancoDeDadosAUsar" 
-})
+            const db = mysql.createConnection({
+            host: "ipDoServidor",
+            user: "usuarioDoBancoDeDados",
+            password: "senhaDoBancoDeDados",
+            database:"bancoDeDadosAUsar" 
+        })
+        module.exports = db;
 
-module.exports = db;
-</code>
+    </pre>
 
--------------
+<code>
+
 
 Depois no servidor é necessário instalar os seguintes pacotes para funcionar:
 
+<code>
 npm install express
 npm install mysql
 npm install cors
+</code>
 
 Depois disso você pode rodar o comando no arquivo *index.js* :
+
+<code>
 node index.js
+</code>
 
 Caso o mysql nao esteja aceitando conexão precisa rodar este comando para permitir acessos:
+
+<code>
 ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
+</code>
 
 Para o banco de dados estou disponibilizando o sql com a estrutura que pensei até momento.
 
 
 # Como está até momento?
 
-## O projeto ainda está em desenvolvimento e não foi implantado todas as funções necessarias, assim que estiver implantada as funções todas sinalizo aqui!
+O projeto ainda está em desenvolvimento e não foi implantado todas as funções necessarias, assim que estiver implantada as funções todas sinalizo aqui!
