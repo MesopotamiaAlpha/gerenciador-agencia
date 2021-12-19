@@ -15,7 +15,7 @@ O servidor precisa ter um banco de dados Mysql rodando para ter a conexão com o
 Primeiro para rodar o servidor precisa ser feito um arquivo de configuração dentro da pasta config/db.js, este arquivo deve conter estas linhas e configuração:
 
 <code>
-    <pre>
+
         const mysql = require('mysql');
 
             const db = mysql.createConnection({
@@ -26,7 +26,7 @@ Primeiro para rodar o servidor precisa ser feito um arquivo de configuração de
         })
         module.exports = db;
 
-    </pre>
+
 
 <code>
 

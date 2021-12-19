@@ -10,19 +10,19 @@ export default function MainRoutes() {
     return (
         <Router>
 
-            <SearchAppBar> </SearchAppBar>
+            <SearchAppBar > </SearchAppBar>
             <Link to="/home">Pagina principal</Link>
             <Link to="/fechamentoCaixa">Fechamento Caixa</Link>
             <Link to="/agendamento">Agendamento de passageiros</Link>
             <Routes>
                 <Route path='/' element={<Cadastro_Pri />} />
-                <Route path='/home' element={<Cadastro_Pri />} /> 
+                <Route path='/home' element={<Cadastro_Pri />} />
                 <Route path='/agendamento' element={<Agendamento />} />
                 <Route path='/fechamentoCaixa' element={<FechamentoCaixa />} />
-                
+
             </Routes>
 
-            </Router>
-            );
+        </Router>
+    );
 
 }
