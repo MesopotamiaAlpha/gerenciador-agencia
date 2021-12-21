@@ -1,8 +1,4 @@
-.titulo2{
-    text-align: center;
-}
-
-.teste{
+.box{
     display: flex;
     flex-direction: column;
     align-items: center;

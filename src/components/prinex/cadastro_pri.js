@@ -58,6 +58,7 @@ function Cadastro_Pri() {
 
             <Resultado_Pri />
         </div>
+        
     );
 }
 
