@@ -8,8 +8,7 @@ import RestanteCaixa from "./restanteComponent";
 function FechamentoCaixa() {
 
     return (
-        <div>
-            <h1 className="titulo2">Fechamento de Caixa</h1>
+        <div className="divGeral">
             <Caixa /> 
             <RestanteCaixa />
         </div>

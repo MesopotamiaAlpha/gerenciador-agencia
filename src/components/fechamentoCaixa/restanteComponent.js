@@ -17,6 +17,15 @@ function nrestCaixa() {
     let ntotal = (nnota200 * 200) + (nnota100 * 100) + (nnota50 * 50) + (nnota20 * 20) + (nnota10 * 10) + (nnota5 * 5) + (nnota2 * 2) + (nmoeda1 * 1) + (nmoeda50 * 0.5) + (nmoeda25 * 0.25) + (nmoeda10 * 0.1) + (nmoeda5 * 0.05);
     let nresul = `O total do caixa é ${ntotal}`;
     document.getElementById("nresul").innerHTML = nresul;
+
+    if (ntotal > 150) {
+        document.getElementById("nresul").style.color = "red";
+    } else if (ntotal === 150) {
+        document.getElementById("nresul").style.color = "green";
+    } else if (ntotal < 150) {
+        document.getElementById("nresul").style.color = "black";
+    }
+
 }
 
 function RestanteCaixa() {
@@ -24,7 +33,6 @@ function RestanteCaixa() {
         <div className="box2">
             <h1 className="titulo2">Restante no Caixa</h1>
 
-            <h1 className="titulo2">Caixa</h1>
             <p>Nota 200 <input id="nnota200" type="number" placeholder="nota 200" onChange={nrestCaixa}></input> </p>
             <p>Nota 100<input id="nnota100" type="number" placeholder="nota 100" onChange={nrestCaixa}></input> </p>
             <p>Nota 50<input id="nnota50" type="number" placeholder="nota 50" onChange={nrestCaixa}></input> </p>
