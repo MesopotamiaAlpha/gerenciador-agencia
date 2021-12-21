@@ -117,13 +117,12 @@ COLLATE = utf8mb4_0900_ai_ci
 #INSERT INTO observacao,qtd_poltrona (obs_texto,qtd_poltrona) VALUES ("Teste de texto",5);
 #INSERT INTO `cadastroPassageiros`.`observacao` (`obs_texto`) VALUES ('erwrewr');
 
-
-#BEGIN;
-#INSERT INTO observacao ( obs_texto)
-#  VALUES('test');
-#INSERT INTO qtd_poltrona (qtd_polt) 
-#  VALUES(5);
-#COMMIT;
-
+##campos para as tabelas de pendencias de clientes
+  create table if not exists pendencias(
+	id_pendencias int not null auto_increment,
+    nome_passageiro varchar (90) not null,
+	valor int (20) not null,
+    obs varchar(100) not null ,
+primary key (id_pendencias) );
 
 

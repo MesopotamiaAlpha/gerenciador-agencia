@@ -4,6 +4,10 @@ import "./cadastro_pri.css";
 import Axios from 'axios';
 import { Checkbox, Paper, Button } from '@mui/material';
 import SendIcon from '@material-ui/icons/Send';
+import Resultado_Pri from './resultado';
+
+
+
 
 function Cadastro_Pri() {
 
@@ -22,22 +26,14 @@ function Cadastro_Pri() {
         }
         );
         window.alert("Cadastro realizado com sucesso!");
-
     };
 
 
-
-
     return (
-
-
         <div className="quadro1">
-
-
             <Paper elevation={12} style={{ padding: 1, backgroundColor: "#002021", border: "5px solid #ed7723" }}  >
                 <h1 className="titulo">Cadastrar o prinex</h1>
-
-                <input className="inpDestinatario" type="text" placeholder="Destinatario" onChange={(e) => { setDestinatario(e.target.value) }} />
+                <input className="inpDestinatario" type="text" placeholder="Destinatario" onChange={(e) => {setDestinatario(e.target.value) }} />
                 <input className="inpCte" type="number" placeholder="CTE" onChange={(e) => { setCte(e.target.value) }} />
                 <input className="inpData" type="date" onChange={(e) => { setData(e.target.value) }} />
 
@@ -59,10 +55,11 @@ function Cadastro_Pri() {
                 <Button className="btnCadastro" variante="contained" style={{ color: "#ed7723"}} endIcon={<SendIcon />} onClick={submitPost}>Cadastrar</Button>
 
             </Paper>
+
+            <Resultado_Pri />
         </div>
+        
     );
-
-
 }
 
 export default Cadastro_Pri;

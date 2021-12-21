@@ -17,7 +17,7 @@ app.get("/api/get", (req, res) => {
     });
 });
 
-// Route to get one post
+// Rota para pegar dados do prinex
 app.get("/api/getFromId/:id", (req, res) => {
 
     const id = req.params.id;
@@ -29,6 +29,20 @@ app.get("/api/getFromId/:id", (req, res) => {
             res.send(result)
         });
 });
+
+//rota para pegar pendencias dos clientes
+app.get("/api/getPendencias", (req, res) => {
+
+    const id = req.params.id;
+    db.query("SELECT * FROM pendencias ", id,
+        (err, result) => {
+            if (err) {
+                console.log(err)
+            }
+            res.send(result)
+        });
+});
+
 
 // Route for creating the post
 app.post('/api/create', (req, res) => {
