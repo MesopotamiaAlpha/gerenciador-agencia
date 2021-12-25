@@ -41,7 +41,9 @@ function Resultado_Pri() {
 
                     {postList.map(nome_prinex =>
                         <ListItemButton style={{ backgroundColor: "#eaeef3" }} component="a" className="textoLista" key={nome_prinex.id_pri}>
+
                             {"Nome Destinatario: " + nome_prinex.destinatario + "   / Tipo Prinex: " + nome_prinex.tipo + "   / Numero Cte: " + nome_prinex.cte + "   / Data cadastrado: " + nome_prinex.cad_data + "Id Prinex:" + nome_prinex.id_pri }
+                            
                             <Button className="btnDel" onClick={(() => deletPost(nome_prinex.id_pri))}> <DeleteIcon edge="end"  onClick={deletRegistro}/> </Button>
                         </ListItemButton>)}
                 </ul>
