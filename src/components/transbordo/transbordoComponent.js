@@ -1,5 +1,6 @@
 import React from 'react';
 import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper } from '@mui/material';
+import "./transbordo.css";
 
 function createData(destino, carregar) {
     return { destino, carregar };
@@ -30,13 +31,13 @@ const rows = [
 
 function Transbordo() {
     return (
-        <div>
+        <div classname="tabelaTransbordo">
             <TableContainer component={Paper}>
                 <Table sx={{ minWidth: 650 }} size="small" aria-label="a dense table">
                     <TableHead>
                         <TableRow>
-                            <TableCell>Destino</TableCell>
-                            <TableCell align="right">Onde Carregar</TableCell>
+                            <TableCell align="center">Destino</TableCell>
+                            <TableCell align="center">Onde Carregar</TableCell>
                         </TableRow>
                     </TableHead>
                     <TableBody>
@@ -45,10 +46,10 @@ function Transbordo() {
                                 key={row.destino}
                                 sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                             >
-                                <TableCell component="th" scope="row">
+                                <TableCell align="center" component="th" scope="row">
                                     {row.destino}
                                 </TableCell>
-                                <TableCell align="right">{row.carregar}</TableCell>
+                                <TableCell align="center">{row.carregar}</TableCell>
                             </TableRow>
                         ))}
                     </TableBody>
