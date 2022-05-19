@@ -6,7 +6,7 @@ import { ListItemButton, Button, Paper } from '@mui/material';
 import DeleteIcon from '@mui/icons-material/Delete';
 
 
-const url = "http://192.168.1.34:3002/api";
+const url = "http://192.168.1.23:3002/api";
 
 
 // esta função traz todos os registros dentro do banco de dados e usa a função map para criar um array de objetos

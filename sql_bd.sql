@@ -4,6 +4,10 @@ use cadastroPassageiros;
 
 ##area dos cadastros de prinex
 
+select * from prinex;
+
+show tables;
+
 CREATE TABLE IF NOT EXISTS `cadastroPassageiros`.`prinex` (
   `id_pri` INT NOT NULL AUTO_INCREMENT,
   `destinatario` VARCHAR(90) NOT NULL,
@@ -13,21 +17,13 @@ CREATE TABLE IF NOT EXISTS `cadastroPassageiros`.`prinex` (
   PRIMARY KEY (`id_pri`))
 ENGINE = InnoDB;
 
-
-create table if not exists nome (
-	id_nome INT NOT NULL AUTO_INCREMENT,
-	nome_passageiro VARCHAR(50) NOT NULL
-);
-
-
 CREATE TABLE IF NOT EXISTS `cadastroPassageiros`.`classe` (
   `id_classe` INT NOT NULL AUTO_INCREMENT,
   `classe_bus` VARCHAR(15) NOT NULL,
   PRIMARY KEY (`id_classe`))
 ENGINE = InnoDB
 AUTO_INCREMENT = 2
-DEFAULT CHARACTER SET = utf8mb4
-COLLATE = utf8mb4_0900_ai_ci;
+DEFAULT CHARACTER SET = utf8mb4;
 
 CREATE TABLE IF NOT EXISTS `cadastroPassageiros`.`observacao` (
   `id_obs` INT NOT NULL AUTO_INCREMENT,
@@ -35,8 +31,7 @@ CREATE TABLE IF NOT EXISTS `cadastroPassageiros`.`observacao` (
   PRIMARY KEY (`id_obs`))
 ENGINE = InnoDB
 AUTO_INCREMENT = 2
-DEFAULT CHARACTER SET = utf8mb4
-COLLATE = utf8mb4_0900_ai_ci;
+DEFAULT CHARACTER SET = utf8mb4;
 
 CREATE TABLE IF NOT EXISTS `cadastroPassageiros`.`qtd_poltrona` (
   `id_qtd` INT NOT NULL AUTO_INCREMENT,
@@ -44,8 +39,7 @@ CREATE TABLE IF NOT EXISTS `cadastroPassageiros`.`qtd_poltrona` (
   PRIMARY KEY (`id_qtd`))
 ENGINE = InnoDB
 AUTO_INCREMENT = 2
-DEFAULT CHARACTER SET = utf8mb4
-COLLATE = utf8mb4_0900_ai_ci;
+DEFAULT CHARACTER SET = utf8mb4;
 
 CREATE TABLE IF NOT EXISTS `cadastroPassageiros`.`viagem_data` (
   `id_data` INT NOT NULL AUTO_INCREMENT,
@@ -53,8 +47,7 @@ CREATE TABLE IF NOT EXISTS `cadastroPassageiros`.`viagem_data` (
   PRIMARY KEY (`id_data`))
 ENGINE = InnoDB
 AUTO_INCREMENT = 2
-DEFAULT CHARACTER SET = utf8mb4
-COLLATE = utf8mb4_0900_ai_ci;
+DEFAULT CHARACTER SET = utf8mb4;
 
 CREATE TABLE IF NOT EXISTS `cadastroPassageiros`.`telefone` (
   `id_telefone` INT NOT NULL AUTO_INCREMENT,
@@ -62,8 +55,7 @@ CREATE TABLE IF NOT EXISTS `cadastroPassageiros`.`telefone` (
   PRIMARY KEY (`id_telefone`))
 ENGINE = InnoDB
 AUTO_INCREMENT = 2
-DEFAULT CHARACTER SET = utf8mb4
-COLLATE = utf8mb4_0900_ai_ci;
+DEFAULT CHARACTER SET = utf8mb4;
 
 CREATE TABLE IF NOT EXISTS `cadastroPassageiros`.`nome` (
   `id_nome` INT NOT NULL AUTO_INCREMENT,
@@ -99,8 +91,7 @@ CREATE TABLE IF NOT EXISTS `cadastroPassageiros`.`nome` (
     REFERENCES `cadastroPassageiros`.`viagem_data` (`id_data`))
 ENGINE = InnoDB
 AUTO_INCREMENT = 3
-DEFAULT CHARACTER SET = utf8mb4
-COLLATE = utf8mb4_0900_ai_ci
+DEFAULT CHARACTER SET = utf8mb4;
 
 
 
@@ -124,5 +115,4 @@ COLLATE = utf8mb4_0900_ai_ci
 	valor int (20) not null,
     obs varchar(100) not null ,
 primary key (id_pendencias) );
-
 
