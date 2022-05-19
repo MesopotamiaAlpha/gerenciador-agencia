@@ -16,6 +16,8 @@ apt-get install -y nodejs
 
 npm install express
 
+npm install -g serve
+
 npm install mysql
 
 npm install cors
