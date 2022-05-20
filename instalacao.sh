@@ -1,28 +1,51 @@
 #!/bin/bash
 
-echo= "Iniciando instalação de dependencias..."
+#CORES
+
+VERMELHO='\e[1;91m'
+VERDE='\e[1;92m'
+SEM_COR='\e[0m'
+
+echo -e "Iniciando instalação de dependencias..."
 
 apt update
 
+echo -e "${VERDE}[INFO] - Update executado com sucesso${SEM_COR}"
+
 apt dist-upgrade -y
 
+echo -e "${VERDE}[INFO] - Dist Upgrade executado com sucesso${SEM_COR}"
+
+apt install mysql-server -y
+
+echo -e "${VERMELHO}[INFO] - Executar processo de mysqlSecure depois${SEM_COR}"
+
 apt install curl -y
-apt install mariadb-server -y
+
+echo -e "${VERDE}[INFO] - Curl instalado com sucesso${SEM_COR}"
+
 apt install nodejs -y
+
+echo -e "${VERDE}[INFO] - Node instalado com sucesso${SEM_COR}"
+
 apt install  npm -y
+
+echo -e "${VERDE}[INFO] - NPM instalado com sucesso ${SEM_COR}"
 
 curl -fsSL https://deb.nodesource.com/setup_18.x | bash -
 apt-get install -y nodejs
 
-npm install express
+echo -e "${VERDE}[INFO] - Instalado node.js 18 com sucesso ${SEM_COR}"
 
-npm install -g serve
+#npm install express
 
-npm install mysql
+#npm install -g serve
 
-npm install cors
+#npm install mysql
 
-npm install -g npm-check-updates
+#npm install cors
+
+#npm install -g npm-check-updates
 
 #ncu
 
@@ -34,7 +57,7 @@ npm install -g npm-check-updates
 
 #npm install
 
-echo= "Gostaria de fazer o deploy? [S/N]"
+echo -e "Gostaria de fazer o deploy? [S/N]"
 
 read resposta
 
